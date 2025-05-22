@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+.pl-heading{
+    padding-top: 60px;
+    text-align: center;
+    color: #5c4f06;
+    text-shadow: 5px 4px #d1d4d4;
+    font-size: 40px;
+    padding-bottom: 50px;
+
+}
+.display-items{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-data {
+    padding-right: 40px;
+}
+.content-data h2{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.display-items {
+    font-weight: 800;
+}
+
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    .pl-heading {
+        font-size: 2rem;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .content-data {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .pl-heading {
+        font-size: 1.6rem;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .display-items {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px 30px;
+    }
+
+    .content-data {
+        padding: 15px;
+    }
+}

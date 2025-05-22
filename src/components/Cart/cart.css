@@ -1,0 +1,155 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cart-component h1{
+
+    text-align: center;
+    background-color: rgb(77, 77, 21);
+    margin: 60px 30px;
+    padding: 10px 0px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px pink;
+
+}
+.cart-empty-notification{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+    
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin: 15px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 92%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+  transition: all 0.2s ease;
+}
+.cart-item:hover{
+    transform: scale(1.05);
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Wrap each item detail (title, size, qty, total, remove) as columns */
+.cart-item-details {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  flex-wrap: wrap;
+}
+.back-butt Link{
+  color: azure;
+}
+
+.back-butt {
+    
+    margin-left: 550px;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+    border: 2px solid rgb(94, 94, 29);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    
+    outline: 2px solid whitesmoke;
+    outline-offset: -5px;
+}
+.back-butt:hover{
+  background-color: green;
+  color: aliceblue;
+}
+/* Each block behaves like a column in the row */
+.cart-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100px;
+  gap: 5px;
+}
+.cart-col label{
+    font-weight: 600;
+}
+
+.cart-col h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cart-col select,
+.cart-col span {
+  font-size: 14px;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-controls button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qty-controls button:hover {
+  background-color: #eee;
+}
+
+.item-total {
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: red;
+  padding: 6px 10px;
+  outline: 1px solid whitesmoke;
+  outline-offset: -5px;
+  border-radius: 6px;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+ 
+
+}
+
+.remove-btn:hover {
+  background-color: green;
+}
+
+
+@media (max-width: 768px) {
+  .cart-item-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-col {
+    width: 100%;
+  }
+}

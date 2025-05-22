@@ -1,0 +1,57 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.beauty_products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-beauty-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 50px;
+}
+.about-beauty-products p{
+    text-align: center;
+    line-height: 25px;
+    color: rgb(13, 13, 88);
+}
+.about-beauty-products h1 {
+    color: rgb(94, 94, 19);
+}
+.about-beauty-products h3 {
+    color: rgb(94, 94, 19);
+}
+.beauty-products-image {
+    padding-bottom: 50px;
+    box-shadow: 2px 2px 8px rgba(79, 53, 198, 0.8);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.beauty-products-image img{
+     height: 300px;
+     border-radius: 20px;
+}
+.loading-process{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.loading-process p{
+    
+    font-size: 30px;
+    font-weight: 600;
+}
+.loading-process img{
+    width: 200px;
+    height: 200px;
+}

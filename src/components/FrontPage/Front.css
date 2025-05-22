@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+.front-page h1{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    text-shadow: #fc0 1px 0 10px;
+    font-family: "Roboto Slab", serif;
+}
+.display-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: row;
+}
+.display-banner img{
+    width: 900px;
+    height: 300px;
+    transition: opacity 0.5s ease-in-out;
+}
+.banner-btn{
+    height: 200px;
+    width: 50px;
+    border: 3px solid #7c6a0a;
+    border-radius: 20px;
+    background-color: #7c6a0a;
+    outline: 2px solid whitesmoke;
+    outline-offset: -8px;
+    color: rgb(7, 7, 101);
+    font-size: 45px;
+
+}
+.banner-btn:hover{
+    background-color: transparent;
+    outline-color: #7c6a0a;
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    .front-page h1 {
+        font-size: 2rem;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .banner-btn {
+        height: 120px;
+        width: 35px;
+        font-size: 1.8rem;
+    }
+
+    .display-banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .display-banner img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .front-page h1 {
+        font-size: 1.6rem;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .banner-btn {
+        height: 100px;
+        width: 30px;
+        font-size: 1.5rem;
+    }
+
+    .display-banner img {
+        width: 100%;
+    }
+}

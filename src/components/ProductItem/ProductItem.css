@@ -1,0 +1,111 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+.product-card{
+    width: 260px;
+    height: auto;
+     border: 1px solid #79690a ; 
+     border-radius: 10px;
+    box-shadow: 2px 6px 8px rgba(146, 135, 22, 0.8);
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.1s ease;
+}
+.product-card:hover{
+    transform: scale(1.1);
+}
+.product-card img{
+    width: 200px ;
+    height: 230px;
+    padding-top: 10px;
+}
+.content-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.content-product p{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+.product-card button{
+    margin-bottom: 20px;
+    padding: 5px 50px;
+    border: 2px solid #5c4f06;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+}
+.product-card button:hover{
+    transform: scale(1.1);
+    background-color: #79690a;
+    color: whitesmoke;
+}
+.count-data{
+    color: gray;
+}
+.rate-data{
+    border: 2px solid green;
+    background-color: green;
+    padding: 3px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+
+
+/* Tablets and smaller */
+@media (max-width: 768px) {
+    .product-card {
+        width: 45%;
+        margin: 10px auto;
+    }
+
+    .product-card button {
+        font-size: 15px;
+        padding: 6px 16px;
+    }
+
+    .rate-data,
+    .count-data {
+        font-size: 13px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .product-card {
+        width: 90%;
+    }
+
+    .product-card img {
+        max-width: 180px;
+    }
+
+    .content-product p {
+        font-size: 0.95rem;
+    }
+
+    .product-card button {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+}
