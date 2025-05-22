@@ -8,4 +8,9 @@
  useEffect, with error handling and performance optimizations
  using lazy loading.
  * Implemented reusable components with props and ensured
- responsive UI across devices. 
+ responsive UI across devices.
+
+###   API get from " https://dummyjson.com/ "
+
+### GitHub repository link
+       
